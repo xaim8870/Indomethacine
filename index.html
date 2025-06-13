@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indomethacin Drug Monograph</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/9098/9098442.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #06b6d4;
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            font-weight: 400;
+        }
+
+        .hero-section {
+            background: var(--bg-gradient);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: -2rem auto 0;
+            padding: 0 2rem 4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .nav-item {
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: white;
+        }
+
+        .nav-item:hover::before {
+            opacity: 1;
+        }
+
+        .nav-item i, .nav-item span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section {
+            background: var(--bg-secondary);
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            padding: 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+        }
+
+        .section-header h2 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-content {
+            padding: 2rem;
+        }
+
+        .section-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-content h3::before {
+            content: '';
+            width: 4px;
+            height: 1.5rem;
+            background: linear-gradient(to bottom, var(--secondary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .section-content p {
+            font-size: 1rem;
+            margin: 1rem 0;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        .section-content ul, .section-content ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+
+        .section-content li {
+            margin: 0.75rem 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+            border: 1px solid #93c5fd;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .highlight::before {
+            content: '💡';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .info-card-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-secondary);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 1.25rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .note {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 0.75rem;
+            border-radius: 8px;
+            border-left: 3px solid #f59e0b;
+            margin: 0.5rem 0;
+        }
+
+        .dosage-list {
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border: 1px solid #86efac;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .adverse-effects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .adverse-card {
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .adverse-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .adverse-low {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border-color: #86efac;
+        }
+
+        .adverse-low::before {
+            background: #22c55e;
+        }
+
+        .adverse-medium {
+            background: linear-gradient(135deg, #fffbeb, #fef3c7);
+            border-color: #fbbf24;
+        }
+
+        .adverse-medium::before {
+            background: #f59e0b;
+        }
+
+        .adverse-high {
+            background: linear-gradient(135deg, #fef2f2, #fecaca);
+            border-color: #f87171;
+        }
+
+        .adverse-high::before {
+            background: #ef4444;
+        }
+
+        .references-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .references-list li {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin: 0.75rem 0;
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .references-list li:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .references-list a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .references-list a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+        }
+
+        .footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-gradient);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+
+            .container {
+                padding: 0 1rem 2rem;
+            }
+
+            .nav-card {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
+            .section-header {
+                padding: 1.5rem;
+            }
+
+            .section-content {
+                padding: 1.5rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .adverse-effects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-container img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Indomethacin</h1>
+            <p class="hero-subtitle">Comprehensive Drug Monograph & Clinical Reference</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="nav-card">
+            <div class="nav-grid">
+                <a href="#introduction" class="nav-item">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Introduction</span>
+                </a>
+                <a href="#chemical-info" class="nav-item">
+                    <i class="fas fa-atom"></i>
+                    <span>Chemical Info</span>
+                </a>
+                <a href="#dosage" class="nav-item">
+                    <i class="fas fa-pills"></i>
+                    <span>Dosage</span>
+                </a>
+                <a href="#mechanism" class="nav-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Mechanism</span>
+                </a>
+                <a href="#indications" class="nav-item">
+                    <i class="fas fa-notes-medical"></i>
+                    <span>Indications</span>
+                </a>
+                <a href="#pharmacokinetics" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Pharmacokinetics</span>
+                </a>
+                <a href="#administration" class="nav-item">
+                    <i class="fas fa-syringe"></i>
+                    <span>Administration</span>
+                </a>
+                <a href="#storage" class="nav-item">
+                    <i class="fas fa-warehouse"></i>
+                    <span>Storage</span>
+                </a>
+                <a href="#adverse" class="nav-item">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Adverse Effects</span>
+                </a>
+                <a href="#contraindications" class="nav-item">
+                    <i class="fas fa-ban"></i>
+                    <span>Contraindications</span>
+                </a>
+                <a href="#pregnancy" class="nav-item">
+                    <i class="fas fa-baby"></i>
+                    <span>Pregnancy & Lactation</span>
+                </a>
+                <a href="#interactions" class="nav-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Interactions</span>
+                </a>
+                <a href="#off-label" class="nav-item">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <span>Off-Label Use</span>
+                </a>
+                <a href="#brands" class="nav-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Brands</span>
+                </a>
+                <a href="#forms" class="nav-item">
+                    <i class="fas fa-capsules"></i>
+                    <span>Forms</span>
+                </a>
+                <a href="#references" class="nav-item">
+                    <i class="fas fa-book"></i>
+                    <span>References</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section" id="introduction">
+            <div class="section-header">
+                <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+            </div>
+            <div class="section-content">
+                <p>Indomethacin is a non-steroidal anti-inflammatory drug (NSAID) used to treat mild to moderate acute pain and relieve symptoms of arthritis (osteoarthritis and rheumatoid arthritis) or gout, such as inflammation, swelling, stiffness, and joint pain.</p>
+            </div>
+        </div>
+
+        <div class="section" id="chemical-info">
+            <div class="section-header">
+                <h2><i class="fas fa-atom"></i> Chemical Information</h2>
+            </div>
+            <div class="section-content">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-flask"></i>
+                            Chemical Formula
+                        </div>
+                        <p><strong>C19H16ClNO4</strong></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-tag"></i>
+                            Therapeutic Category
+                        </div>
+                        <ul>
+                            <li>Anti-Inflammatory Agents</li>
+                            <li>Non-Steroidal</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://pubchem.ncbi.nlm.nih.gov/image/imagefly.cgi?cid=3715&width=300&height=300" alt="Indomethacin Structural Formula">
+                    <p class="caption">Structural formula of Indomethacin. Source: PubChem</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="dosage">
+            <div class="section-header">
+                <h2><i class="fas fa-pills"></i> Dosage Forms & Strengths (Adults)</h2>
+            </div>
+            <div class="section-content">
+                <div class="dosage-list">
+                    <ul>
+                        <li><strong>Capsule:</strong> 25 mg, 50 mg</li>
+                        <li><strong>Capsule (Extended Release):</strong> 75 mg</li>
+                        <li><strong>Oral Suspension:</strong> 25 mg/5 ml</li>
+                        <li><strong>Suppository:</strong> 50 mg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="mechanism">
+            <div class="section-header">
+                <h2><i class="fas fa-cogs"></i> Mechanism of Action</h2>
+            </div>
+            <div class="section-content">
+                <div class="highlight">
+                    Indomethacin works by blocking an enzyme called cyclo-oxygenase (COX), which is involved in making substances known as prostaglandins. It is believed to help close a patent ductus arteriosus (PDA) by reducing the production of prostaglandins, particularly PGE1, encouraging the ductus arteriosus to close in premature babies.
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="indications">
+            <div class="section-header">
+                <h2><i class="fas fa-notes-medical"></i> Indications</h2>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>Management of acute gouty arthritis</li>
+                    <li>Used in combination to treat joint pain</li>
+                    <li>Management of moderate to severe osteoarthritis</li>
+                    <li>Management of moderate to severe rheumatoid arthritis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="pharmacokinetics">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> Pharmacokinetics</h2>
+            </div>
+            <div class="section-content">
+                <h3>Absorption</h3>
+                <p>Indomethacin is rapidly absorbed from the gastrointestinal tract.</p>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-percentage"></i>
+                            Bioavailability
+                        </div>
+                        <p>100% (Oral)</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-clock"></i>
+                            Onset
+                        </div>
+                        <p>30 min</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-hourglass-half"></i>
+                            Duration
+                        </div>
+                        <p>4-6 hr</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-chart-area"></i>
+                            Peak Plasma Time
+                        </div>
+                        <p>0.5-2 hr; 1.67 hr</p>
+                    </div>
+                </div>
+
+                <h3>Volume of Distribution</h3>
+                <p>Ranges from 0.34 to 1.57 L/kg via oral, rectal, or intravenous administration. Indomethacin crosses the blood-brain barrier (BBB), with only the unbound fraction diffusing across due to extensive plasma protein binding.</p>
+
+                <h3>Protein Binding</h3>
+                <p>Indomethacin is a weak organic acid, 90-99% bound to plasma protein (albumin), but does not bind to red blood cells.</p>
+
+                <h3>Metabolism</h3>
+                <p>Metabolized in the liver, undergoes enterohepatic circulation where it is excreted into bile as glucuronide, then reabsorbed after breakdown in the intestine.</p>
+
+                <h3>Route of Elimination</h3>
+                <ul>
+                    <li>Renal excretion</li>
+                    <li>Biliary excretion</li>
+                    <li>Urine (60%)</li>
+                    <li>Feces (>33%)</li>
+                </ul>
+
+                <h3>Half-Life</h3>
+                <p>Biphasic elimination:</p>
+                <ul>
+                    <li>First phase: ~1 hour</li>
+                    <li>Second phase: 2.6 to 11.2 hours</li>
+                    <li>Oral average: ~4.5 hours</li>
+                    <li>Intravenous average: ~20 hours</li>
+                </ul>
+
+                <h3>Clearance</h3>
+                <p>1 to 2.5 mL/kg/min when taken orally.</p>
+            </div>
+        </div>
+
+        <div class="section" id="administration">
+            <div class="section-header">
+                <h2><i class="fas fa-syringe"></i> Administration</h2>
+            </div>
+            <div class="section-content">
+                <h3>Orally</h3>
+                <p>Take with food or 8-12 oz of water to avoid gastrointestinal effects.</p>
+                <h3>Intravenous</h3>
+                <p>Infuse over 20-30 min at a concentration of 0.5-1 mg/mL in preservative-free sterile water for injection (SWI) or normal saline (NS). Avoid bolus administration to prevent vasoconstriction and compromised intestinal blood flow. Do not administer intra-arterially.</p>
+            </div>
+        </div>
+
+        <div class="section" id="storage">
+            <div class="section-header">
+                <h2><i class="fas fa-warehouse"></i> Storage</h2>
+            </div>
+            <div class="section-content">
+                <div class="info-card">
+                    <div class="info-card-title">
+                        <i class="fas fa-thermometer-half"></i>
+                        Storage Conditions
+                    </div>
+                    <p>Store below 30°C (86°F), protect from light.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="adverse">
+            <div class="section-header">
+                <h2><i class="fas fa-exclamation-triangle"></i> Adverse Effects</h2>
+            </div>
+            <div class="section-content">
+                <div class="adverse-effects-grid">
+                    <div class="adverse-card adverse-low">
+                        <h3><1%</h3>
+                        <ul>
+                            <li>Acute respiratory distress</li>
+                            <li>Congestive heart failure (CHF)</li>
+                            <li>Thrombocytopenia</li>
+                        </ul>
+                    </div>
+                    <div class="adverse-card adverse-medium">
+                        <h3>1-10%</h3>
+                        <ul>
+                            <li>Dizziness (3-9%)</li>
+                            <li>Dyspepsia (3-9%)</li>
+                            <li>Epigastric pain (3-9%)</li>
+                            <li>Indigestion (3-9%)</li>
+                            <li>Nausea (3-9%)</li>
+                        </ul>
+                    </div>
+                    <div class="adverse-card adverse-high">
+                        <h3>>10%</h3>
+                        <ul>
+                            <li>Transient renal insufficiency (40%)</li>
+                            <li>Jaundice (≤15%)</li>
+                            <li>Elevated liver function test values (≤15%)</li>
+                            <li>Headache (12%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="contraindications">
+            <div class="section-header">
+                <h2><i class="fas fa-ban"></i> Contraindications</h2>
+            </div>
+            <div class="section-content">
+                <h3>Absolute</h3>
+                <p>History of severe allergy to indomethacin or aspirin (e.g., rash, asthma, anaphylaxis).</p>
+                <h3>Relative (Caution Needed)</h3>
+                <ul>
+                    <li>Bleeding problems</li>
+                    <li>Peptic and duodenal ulcers</li>
+                    <li>Mouth inflammation (stomatitis)</li>
+                    <li>Neonates: premature kidney issues, ongoing infection, necrotizing enterocolitis, active bleeding (e.g., stomach or brain)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="pregnancy">
+            <div class="section-header">
+                <h2><i class="fas fa-baby"></i> Pregnancy & Lactation</h2>
+            </div>
+            <div class="section-content">
+                <h3>Pregnancy</h3>
+                <p>Avoid after 30 weeks due to risk of early fetal ductus arteriosus closure and kidney problems. If needed between 20-30 weeks, use the lowest effective dose for the shortest time. Monitor for oligohydramnios if used >48 hours; stop if it occurs.</p>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <i class="fas fa-user-md"></i>
+                            Pregnancy Category
+                        </div>
+                        <ul>
+                            <li>First Trimester: Category B (generally safe)</li>
+                            <li>Third Trimester: Category D (evidence of risk, avoid unless necessary)</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Lactation</h3>
+                <p>Indomethacin may pass into breast milk. Weigh benefits of breastfeeding and mother's need against risks to the baby.</p>
+            </div>
+        </div>
+
+        <div class="section" id="interactions">
+            <div class="section-header">
+                <h2><i class="fas fa-exchange-alt"></i> Interactions</h2>
+            </div>
+            <div class="section-content">
+                <ol>
+                    <li>
+                        <strong>Captopril (ACE Inhibitor):</strong> Reduces blood pressure-lowering effect, may harm kidney function. 
+                        <div class="note">Caution: Avoid combination or consider alternatives.</div>
+                    </li>
+                    <li>
+                        <strong>Methotrexate:</strong> Increases methotrexate levels by slowing renal clearance, risking blood and gut toxicity. 
+                        <div class="note">Caution: Avoid due to severe toxicity risk.</div>
+                    </li>
+                    <li>
+                        <strong>Aminolevulinic Acid (Oral):</strong> Increases phototoxic side effects, especially around surgery. 
+                        <div class="note">Caution: Avoid phototoxic drugs within 24 hours of aminolevulinic acid.</div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section" id="off-label">
+            <div class="section-header">
+                <h2><i class="fas fa-prescription-bottle-alt"></i> Off-Label Use</h2>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>Patent Ductus Arteriosus (PDA)</li>
+                    <li>Juvenile idiopathic arthritis</li>
+                    <li>Reduce calcium levels in the blood</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="brands">
+            <div class="section-header">
+                <h2><i class="fas fa-tags"></i> Commonly Available Brands in Pakistan</h2>
+            </div>
+            <div class="section-content">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Brand Name</th>
+                                <th>Manufacturer</th>
+                                <th>Retail Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ANGLOCID</td>
+                                <td>EURO PHARMA INTERNATIONAL</td>
+                                <td>240 Rs</td>
+                            </tr>
+                            <tr>
+                                <td>INDACIN</td>
+                                <td>KARACHI PHARMACEUTICALS</td>
+                                <td>284 Rs</td>
+                            </tr>
+                            <tr>
+                                <td>INDOBID</td>
+                                <td>ADAMJEE PHARMACEUTICALS</td>
+                                <td>251 Rs</td>
+                            </tr>
+                            <tr>
+                                <td>INDOCAP</td>
+                                <td>HAMAZ PHARMACEUTICALS</td>
+                                <td>217 Rs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="forms">
+            <div class="section-header">
+                <h2><i class="fas fa-capsules"></i> Available Forms</h2>
+            </div>
+            <div class="section-content">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Brand</th>
+                                <th>Form</th>
+                                <th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Indocin oral</td>
+                                <td>25 mg/5 mL suspension</td>
+                                <td>
+                                    <div class="image-container">
+                                        <img src="https://www.drugs.com/images/pills/mtm/Indocin-25-mg-5-mL-oral-suspension.jpg" alt="Indocin Oral Suspension" style="max-width: 100px;">
+                                        <p class="caption">Indocin Oral Suspension. Source: Drugs.com</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Indomethacin rectal</td>
+                                <td>50 mg suppository</td>
+                                <td>
+                                    <div class="image-container">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YpoQtyxgufUWaDw62RGDb2duAI2Tt2T9Qw&s" alt="Indomethacin Suppository">
+                                        <p class="caption">Indomethacin 50 mg suppository. Source: WebMD</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="references">
+            <div class="section-header">
+                <h2><i class="fas fa-book"></i> References</h2>
+            </div>
+            <div class="section-content">
+                <ul class="references-list">
+                    <li><a href="https://www.drugs.com/dosage/indomethacin.html">Drugs.com - Indomethacin Dosage</a></li>
+                    <li><a href="https://reference.medscape.com/drug/indocin-indomethacin-343290#10">Medscape - Indomethacin</a></li>
+                    <li><a href="https://go.drugbank.com/drugs/DB00328">DrugBank - Indomethacin</a></li>
+                    <li><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Indomethacin">PubChem - Indomethacin</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding: 2rem; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin: 2rem auto; max-width: 300px;">
+            <img src="https://via.placeholder.com/150?text=QR+Code" alt="QR Code for Indomethacin Monograph" style="width: 150px; height: 150px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 1rem; font-style: italic;">Scan to access Indomethacin Monograph</p>
+        </div>
+
+        <div class="footer">
+            <p>Information compiled for educational purposes only. Consult a healthcare professional before using Indomethacin.</p>
+            <p>Sources: 
+                <a href="https://www.drugs.com/dosage/indomethacin.html">Drugs.com</a>, 
+                <a href="https://reference.medscape.com/drug/indocin-indomethacin-343290#10">Medscape</a>, 
+                <a href="https://go.drugbank.com/drugs/DB00328">DrugBank</a>, 
+                <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Indomethacin">PubChem</a>
+            </p>
+            <p>© 2025 Pharmaceutical Information Portal</p>
+        </div>
+
+        <button class="scroll-top" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.nav-item').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Scroll-to-top button visibility
+            const scrollTopBtn = document.querySelector('.scroll-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+
+            // Scroll to top on click
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+    </body>
+</html>
